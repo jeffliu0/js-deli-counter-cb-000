@@ -2,7 +2,7 @@ var katzDeli = []
 
 function takeANumber(lineOfPeople, name){
   lineOfPeople[lineOfPeople.length + 1] = name
-  return
+  return lineOfPeople.length + 1
 }
 
 function nowServing(line){
