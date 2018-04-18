@@ -20,4 +20,5 @@ function currentLine(line){
   for (var i = 0; i<line.length; i++){
     currLine = currLine + (i + 1 ) + `. ${line[i]}`
   }
+  return currLine
 }
