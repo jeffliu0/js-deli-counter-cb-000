@@ -19,7 +19,10 @@ function currentLine(line){
   }
   var currLine = "The line is currently: "
   for (var i = 0; i<line.length; i++){
-    currLine = currLine + (i + 1 ) + `. ${line[i]}, `
+    if(i == line.length - 1)
+      currLine = currLine + (i + 1 ) + `. ${line[i]} `
+    else
+      currLine = currLine + (i + 1 ) + `. ${line[i]}, `
   }
   return currLine
 }
